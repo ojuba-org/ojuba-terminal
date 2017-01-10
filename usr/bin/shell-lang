@@ -1,0 +1,43 @@
+#!/bin/bash
+# Shell-Lang.
+# Makes non-English languages writable on terminal.
+# Version 0.0.1
+# License: Waqf2 or GPL3.
+# By: Mosaab Alzoubi <moceap@hotmail.com>
+# Ojuba project <http://ojuba.org> 2014
+#==========================================
+ver=0.0.1
+arg="$@"
+available="$(ls /usr/share/shell-lang/languages)"
+if [ -e "$HOME/.shelllang" ]
+    then   
+        last_language=$(cat $HOME/.shelllang)
+    else
+        last_language=""
+fi
+HELP()
+{
+echo "Shell-Lang $ver, Makes non-English languages writable on
+terminal. Just print shell-lang to enable available language
+by add its code after command.
+E.g. To enable Arabic writing just print shell-lang ar
+To switsh between English and activated language just press
+Ctrl + Space. Available languages are:
+
+$available"
+}
+if [ "$arg" = "--help" ]
+    then HELP
+    exit
+fi
+if [ "$arg" = "" ]
+    then HELP
+    exit
+fi
+if ! [ "$arg" = "" ]
+    then
+        if [ -e "/usr/share/shell-lang/languages/$arg" ]
+            then  /usr/share/shell-lang/languages/$arg
+            else echo "Language not available."; exit
+        fi
+fi
