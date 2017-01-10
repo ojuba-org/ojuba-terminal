@@ -1,0 +1,811 @@
+#!/bin/bash
+# Arabic table for Shell-Lang tool.
+# Version 0.0.1
+# License: Waqf2 or GPL3.
+# By: Mosaab Alzoubi <moceap@hotmail.com>
+# Ojuba project <http://ojuba.org> 2014
+#==========================================
+# NB: " = \042
+# NB: ' = \047
+# NB: , = \054
+# NB: . = \056
+# NB: / = \057
+# NB: ; = \073
+# NB: [ = \133
+# NB: ] = \135
+# NB: ` = \140
+# NB: { = \173
+# NB: } = \175
+# NB: ~ = \176
+###############
+language_code="ar"
+###############
+
+ar_140()
+{
+bind '"\140":"ذ"'
+}
+un_ar_140()
+{
+bind '"\140":self-insert'
+}
+ar_176()
+{
+bind '"~":"ّ"'
+}
+un_ar_176()
+{
+bind '"~":self-insert'
+}
+ar_1()
+{
+bind '"1":"١"'
+}
+un_ar_1()
+{
+bind '"1":self-insert'
+}
+ar_2()
+{
+bind '"2":"٢"'
+}
+un_ar_2()
+{
+bind '"2":self-insert'
+}
+ar_3()
+{
+bind '"3":"٣"'
+}
+un_ar_3()
+{
+bind '"3":self-insert'
+}
+ar_4()
+{
+bind '"4":"٤"'
+}
+un_ar_4()
+{
+bind '"4":self-insert'
+}
+ar_5()
+{
+bind '"5":"٥"'
+}
+un_ar_5()
+{
+bind '"5":self-insert'
+}
+ar_6()
+{
+bind '"6":"٦"'
+}
+un_ar_6()
+{
+bind '"6":self-insert'
+}
+ar_7()
+{
+bind '"7":"٧"'
+}
+un_ar_7()
+{
+bind '"7":self-insert'
+}
+ar_8()
+{
+bind '"8":"٨"'
+}
+un_ar_8()
+{
+bind '"8":self-insert'
+}
+ar_9()
+{
+bind '"9":"٩"'
+}
+un_ar_9()
+{
+bind '"9":self-insert'
+}
+ar_0()
+{
+bind '"0":"٠"'
+}
+un_ar_0()
+{
+bind '"0":self-insert'
+}
+ar_q()
+{
+bind '"q":"ض"'
+}
+un_ar_q()
+{
+bind '"q":self-insert'
+}
+ar_w()
+{
+bind '"w":"ص"'
+}
+un_ar_w()
+{
+bind '"w":self-insert'
+}
+ar_e()
+{
+bind '"e":"ث"'
+}
+un_ar_e()
+{
+bind '"e":self-insert'
+}
+ar_r()
+{
+bind '"r":"ق"'
+}
+un_ar_r()
+{
+bind '"r":self-insert'
+}
+ar_t()
+{
+bind '"t":"ف"'
+}
+un_ar_t()
+{
+bind '"t":self-insert'
+}
+ar_y()
+{
+bind '"y":"غ"'
+}
+un_ar_y()
+{
+bind '"y":self-insert'
+}
+ar_u()
+{
+bind '"u":"ع"'
+}
+un_ar_u()
+{
+bind '"u":self-insert'
+}
+ar_i()
+{
+bind '"i":"ه"'
+}
+un_ar_i()
+{
+bind '"i":self-insert'
+}
+ar_o()
+{
+bind '"o":"خ"'
+}
+un_ar_o()
+{
+bind '"o":self-insert'
+}
+ar_p()
+{
+bind '"p":"ح"'
+}
+un_ar_p()
+{
+bind '"p":self-insert'
+}
+ar_133()
+{
+bind '"[":"ج"'
+}
+un_ar_133()
+{
+bind '"[":self-insert'
+}
+ar_135()
+{
+bind '"]":"د"'
+}
+un_ar_135()
+{
+bind '"]":self-insert'
+}
+ar_a()
+{
+bind '"a":"ش"'
+}
+un_ar_a()
+{
+bind '"a":self-insert'
+}
+ar_s()
+{
+bind '"s":"س"'
+}
+un_ar_s()
+{
+bind '"s":self-insert'
+}
+ar_d()
+{
+bind '"d":"ي"'
+}
+un_ar_d()
+{
+bind '"d":self-insert'
+}
+ar_f()
+{
+bind '"f":"ب"'
+}
+un_ar_f()
+{
+bind '"f":self-insert'
+}
+ar_g()
+{
+bind '"g":"ل"'
+}
+un_ar_g()
+{
+bind '"g":self-insert'
+}
+ar_h()
+{
+bind '"h":"ا"'
+}
+un_ar_h()
+{
+bind '"h":self-insert'
+}
+ar_j()
+{
+bind '"j":"ت"'
+}
+un_ar_j()
+{
+bind '"j":self-insert'
+}
+ar_k()
+{
+bind '"k":"ن"'
+}
+un_ar_k()
+{
+bind '"k":self-insert'
+}
+ar_l()
+{
+bind '"l":"م"'
+}
+un_ar_l()
+{
+bind '"l":self-insert'
+}
+ar_073()
+{
+bind '";":"ك"'
+}
+un_ar_073()
+{
+bind '";":self-insert'
+}
+ar_047()
+{
+bind '"\047":"ط"'
+}
+un_ar_047()
+{
+bind '"\047":self-insert'
+}
+ar_z()
+{
+bind '"z":"ئ"'
+}
+un_ar_z()
+{
+bind '"z":self-insert'
+}
+ar_x()
+{
+bind '"x":"ء"'
+}
+un_ar_x()
+{
+bind '"x":self-insert'
+}
+ar_c()
+{
+bind '"c":"ؤ"'
+}
+un_ar_c()
+{
+bind '"c":self-insert'
+}
+ar_v()
+{
+bind '"v":"ر"'
+}
+un_ar_v()
+{
+bind '"v":self-insert'
+}
+ar_b()
+{
+bind '"b":"لا"'
+}
+un_ar_b()
+{
+bind '"b":self-insert'
+}
+ar_n()
+{
+bind '"n":"ى"'
+}
+un_ar_n()
+{
+bind '"n":self-insert'
+}
+ar_m()
+{
+bind '"m":"ة"'
+}
+un_ar_m()
+{
+bind '"m":self-insert'
+}
+ar_054()
+{
+bind '",":"و"'
+}
+un_ar_054()
+{
+bind '",":self-insert'
+}
+ar_056()
+{
+bind '".":"ز"'
+}
+un_ar_056()
+{
+bind '".":self-insert'
+}
+ar_057()
+{
+bind '"/":"ظ"'
+}
+un_ar_057()
+{
+bind '"/":self-insert'
+}
+ar_Q()
+{
+bind '"Q":"َ"'
+}
+un_ar_Q()
+{
+bind '"Q":self-insert'
+}
+ar_W()
+{
+bind '"W":"ً"'
+}
+un_ar_W()
+{
+bind '"W":self-insert'
+}
+ar_E()
+{
+bind '"E":"ُ"'
+}
+un_ar_E()
+{
+bind '"E":self-insert'
+}
+ar_R()
+{
+bind '"R":"ٌ"'
+}
+un_ar_R()
+{
+bind '"R":self-insert'
+}
+ar_T()
+{
+bind '"T":"لإ"'
+}
+un_ar_T()
+{
+bind '"T":self-insert'
+}
+ar_Y()
+{
+bind '"Y":"إ"'
+}
+un_ar_Y()
+{
+bind '"Y":self-insert'
+}
+ar_U() #Need Fix
+{
+bind '"U":"\140"'
+}
+un_ar_U()
+{
+bind '"U":self-insert'
+}
+ar_I()
+{
+bind '"I":"÷"'
+}
+un_ar_I()
+{
+bind '"I":self-insert'
+}
+ar_O()
+{
+bind '"O":"×"'
+}
+un_ar_O()
+{
+bind '"O":self-insert'
+}
+ar_P()
+{
+bind '"P":"؛"'
+}
+un_ar_P()
+{
+bind '"P":self-insert'
+}
+ar_173() #Need Fix
+{
+bind '"{":">"'
+}
+un_ar_173()
+{
+bind '"{":self-insert'
+}
+ar_175() #Need Fix
+{
+bind '"}":"<"'
+}
+un_ar_175()
+{
+bind '"}":self-insert'
+}
+ar_A()
+{
+bind '"A":"ِ"'
+}
+un_ar_A()
+{
+bind '"A":self-insert'
+}
+ar_S()
+{
+bind '"S":"ٍ"'
+}
+un_ar_S()
+{
+bind '"S":self-insert'
+}
+ar_D() #Need Fix
+{
+bind '"D":"]"'
+}
+un_ar_D()
+{
+bind '"D":self-insert'
+}
+ar_F() #Need Fix
+{
+bind '"F":"["'
+}
+un_ar_F()
+{
+bind '"F":self-insert'
+}
+ar_G()
+{
+bind '"G":"لأ"'
+}
+un_ar_G()
+{
+bind '"G":self-insert'
+}
+ar_H()
+{
+bind '"H":"أ"'
+}
+un_ar_H()
+{
+bind '"H":self-insert'
+}
+ar_J()
+{
+bind '"J":"ـ"'
+}
+un_ar_J()
+{
+bind '"J":self-insert'
+}
+ar_K()
+{
+bind '"K":"،"'
+}
+un_ar_K()
+{
+bind '"K":self-insert'
+}
+ar_L() #Need Fix
+{
+bind '"L":"/"'
+}
+un_ar_L()
+{
+bind '"L":self-insert'
+}
+ar_Z() #Need Fix
+{
+bind '"Z":"~"'
+}
+un_ar_Z()
+{
+bind '"Z":self-insert'
+}
+ar_X()
+{
+bind '"X":"ْ"'
+}
+un_ar_X()
+{
+bind '"X":self-insert'
+}
+ar_C() #Need Fix
+{
+bind '"C":"}"'
+}
+un_ar_C()
+{
+bind '"C":self-insert'
+}
+ar_V() #Need Fix
+{
+bind '"V":"{"'
+}
+un_ar_V()
+{
+bind '"V":self-insert'
+}
+ar_B()
+{
+bind '"B":"لآ"'
+}
+un_ar_B()
+{
+bind '"B":self-insert'
+}
+ar_N()
+{
+bind '"N":"آ"'
+}
+un_ar_N()
+{
+bind '"N":self-insert'
+}
+ar_M() #Need Fix
+{
+bind '"M":"\147"'
+}
+un_ar_M()
+{
+bind '"M":self-insert'
+}
+ar_SM() #Need Fix
+{
+bind '"<":","'
+}
+un_ar_SM()
+{
+bind '"Y":self-insert'
+}
+ar_LM() #Need Fix
+{
+bind '">":"."'
+}
+un_ar_LM()
+{
+bind '"Y":self-insert'
+}
+ar_QM()
+{
+bind '"?":"؟"'
+}
+un_ar_QM()
+{
+bind '"?":self-insert'
+}
+##########################
+ar_enable()
+{
+ar_140
+ar_176
+ar_1
+ar_2
+ar_3
+ar_4
+ar_5
+ar_6
+ar_7
+ar_8
+ar_9
+ar_0
+ar_q
+ar_w
+ar_e
+ar_r
+ar_t
+ar_y
+ar_u
+ar_i
+ar_o
+ar_p
+ar_133
+ar_135
+ar_a
+ar_s
+ar_d
+ar_f
+ar_g
+ar_h
+ar_j
+ar_k
+ar_l
+ar_073
+ar_047
+ar_z
+ar_x
+ar_c
+ar_v
+ar_b
+ar_n
+ar_m
+ar_054
+ar_056
+ar_057
+###
+ar_Q
+ar_W
+ar_E
+ar_R
+ar_T
+ar_Y
+ar_U
+ar_I
+ar_O
+ar_P
+ar_173
+ar_175
+ar_A
+ar_S
+ar_D
+ar_F
+ar_G
+ar_H
+ar_J
+ar_K
+ar_L
+ar_Z
+ar_X
+ar_C
+ar_V
+ar_B
+ar_N
+ar_M
+ar_LM
+ar_SM
+ar_QM
+}
+ar_disable()
+{
+un_ar_140
+un_ar_176
+un_ar_1
+un_ar_2
+un_ar_3
+un_ar_4
+un_ar_5
+un_ar_6
+un_ar_7
+un_ar_8
+un_ar_9
+un_ar_0
+un_ar_q
+un_ar_w
+un_ar_e
+un_ar_r
+un_ar_t
+un_ar_y
+un_ar_u
+un_ar_i
+un_ar_o
+un_ar_p
+un_ar_133
+un_ar_135
+un_ar_a
+un_ar_s
+un_ar_d
+un_ar_f
+un_ar_g
+un_ar_h
+un_ar_j
+un_ar_k
+un_ar_l
+un_ar_073
+un_ar_047
+###
+un_ar_Q
+un_ar_W
+un_ar_E
+un_ar_R
+un_ar_T
+un_ar_Y
+un_ar_U
+un_ar_I
+un_ar_O
+un_ar_P
+un_ar_173
+un_ar_175
+un_ar_z
+un_ar_x
+un_ar_c
+un_ar_v
+un_ar_b
+un_ar_n
+un_ar_m
+un_ar_054
+un_ar_056
+un_ar_057
+un_ar_A
+un_ar_S
+un_ar_D
+un_ar_F
+un_ar_G
+un_ar_H
+un_ar_J
+un_ar_K
+un_ar_L
+un_ar_Z
+un_ar_X
+un_ar_C
+un_ar_V
+un_ar_B
+un_ar_N
+un_ar_M
+un_ar_LM
+un_ar_SM
+un_ar_QM
+}
+change_language()
+{
+if [ -e "$HOME/.shelllang" ]
+    then   
+        detected_language=$(cat $HOME/.shelllang)
+    else
+        detected_language=""
+fi        
+if [ "$detected_language" = "$language_code" ]
+    then
+            ar_disable
+            rm $HOME/.shelllang
+    else
+            ar_enable
+            echo "ar" > $HOME/.shelllang
+fi            
+echo "Language Changed تم تبديل اللغة"
+}
+bind -x '"\e[24~":change_language'
