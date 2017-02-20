@@ -13,18 +13,13 @@ wel="*** مرحبا بكم في أعجوبة ٣٨ ** إصدارة القدس ***
 
 
 if [ "$KONSOLE_DBUS_WINDOW" = "" ]; then # طرفية كدي تدعم العربية
-if [ "$ifbicon" = "" ]; then
-ifbicon="`ps -p $(ps -p $(echo $$) -o ppid=) -o comm=`"
-alias exit=exit
-else
-alias exit='kill -9 $(ps -p $PPID -o ppid=)' # تجنب الخروج من طرفيتين بيكون وباش
-fi
+
 if ! [ "$ifbicon" = bicon.bin ]; then
 echo
 echo -e "\033[1;31m$wel" | fribidi
 echo
 export ifbicon=bicon.bin
-bicon.bin
+exec bicon.bin "$@"
 fi
 else
 echo
@@ -77,6 +72,5 @@ man()
 }
 alias pss='ps af  | /bin/grep -v egrep | /bin/egrep --color=auto'
 alias psg='ps aux | /bin/grep -v egrep | /bin/egrep --color=auto'
-LC_TIME=en_US.utf8
 
 fi # إغلاق شرط التفعيل
