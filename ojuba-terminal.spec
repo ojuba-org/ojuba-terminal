@@ -9,6 +9,7 @@ License: WAQFv2
 URL: http://ojuba.org
 Source: https://github.com/%{owner}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Requires: bicon-fonts
+Requires: /etc/vconsole.conf
 BuildArch: noarch
 
 %description
