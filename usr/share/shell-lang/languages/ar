@@ -801,7 +801,7 @@ fi
 if [ "$detected_language" = "$language_code" ]
     then
             ar_disable
-            rm $HOME/.shelllang
+            rm -f $HOME/.shelllang
     else
             ar_enable
             echo "ar" > $HOME/.shelllang
