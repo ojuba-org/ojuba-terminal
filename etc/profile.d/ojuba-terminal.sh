@@ -1,38 +1,35 @@
 ##########################
-## OJUBA TERMINAL 0.1 ####
+## OJUBA TERMINAL 0.3 ####
 ##########################
 ## BY MOSAAB ALZOUBI #####
 ## UNDER WAQFv2 LICENSE ##
 ##########################
 
+##A شروط التفعيل
+detect="$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)"
+if ! [ "$OJUBA_TERM" = "0" ]; then
+if ! [ "$detect" = bicon.bin ]; then
+if tty -s ; then pass=OK
+elif ! [ "`echo $detect | grep gnome`" = "" ]; then pass=OK
+fi ; fi ; fi
 
-if ! [ "$OJUBA_TERM" = "0" ]; then # بداية شرط التفعيل
-
-# الترحيب
-wel="*** مرحبا بكم في أعجوبة ٣٨ ** إصدارة القدس ***"
-
-
-if [ "$KONSOLE_DBUS_WINDOW" = "" ]; then # طرفية كدي تدعم العربية
-
-if ! [ "$ifbicon" = bicon.bin ]; then
-echo
-echo -e "\033[1;31m$wel" | fribidi
-echo
-export ifbicon=bicon.bin
+##A التفعيل
+if [ "$pass" = OK ]; then
 exec bicon.bin "$@"
 fi
-else
-echo
+
+#ِ#A الترحيب
+wel="*** مرحبا بكم في أعجوبة ٣٨ ** إصدارة القدس ***"
 echo -e "\033[1;31m$wel"
-echo
-fi
-# الكتابة
+
+##A الكتابة
 if [ "$TERM" = linux ]; then
+#setfont /usr/share/bicon/font/bicon-8x16-512.psfu.gz
 source /usr/share/shell-lang/languages/ar
 fi
 
 
-# اسم المستخدم و الجهاز
+##A إعدادات عامة
 if [ $UID -eq 0 ] ; then
     PS1='\[$(tput setaf 1)\][\u@\h]\[$(tput bold ; tput setaf 5)\]>>[\W]#\[$(tput sgr0)\] '
 else
@@ -72,5 +69,3 @@ man()
 }
 alias pss='ps af  | /bin/grep -v egrep | /bin/egrep --color=auto'
 alias psg='ps aux | /bin/grep -v egrep | /bin/egrep --color=auto'
-
-fi # إغلاق شرط التفعيل
