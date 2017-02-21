@@ -8,19 +8,22 @@
 ##A شروط التفعيل
 detect="$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)"
 if ! [ "$OJUBA_TERM" = "0" ]; then
-if ! [ "$detect" = bicon.bin ]; then
+if ! [ "$already" = "true" ]; then
+if ! [ "$detect" = "bicon.bin" ]; then
 if tty -s ; then pass=OK
 elif ! [ "`echo $detect | grep gnome`" = "" ]; then pass=OK
-fi ; fi ; fi
+fi ; fi ; fi ; fi
 
 ##A التفعيل
 if [ "$pass" = OK ]; then
+export already="true"
 exec bicon.bin "$@"
 fi
 
 #ِ#A الترحيب
 wel="*** مرحبا بكم في أعجوبة ٣٨ ** إصدارة القدس ***"
 echo -e "\033[1;31m$wel"
+echo
 
 ##A الكتابة
 if [ "$TERM" = linux ]; then
