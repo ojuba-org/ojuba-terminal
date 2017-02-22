@@ -28,7 +28,8 @@ Ojuba Terminal
 %doc README.md
 %{_bindir}/shell-lang
 %{_datadir}/shell-lang/*
-%{_datadir}/polkit-1/*
+%{_datadir}/polkit-1/actions/org.ojuba.pkexec.setfont.policy
+%{_datadir}/polkit-1/rules.d/org.ojuba.pkexec.setfont.rules
 %{_sysconfdir}/profile.d/ojuba-terminal.sh
 
 %changelog
