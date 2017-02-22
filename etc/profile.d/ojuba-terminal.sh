@@ -5,6 +5,13 @@
 ## UNDER WAQFv2 LICENSE ##
 ##########################
 
+##A الخط
+if [ "$TERM" = linux ]; then
+if ! [ "$fontsetten" = "true" ]; then
+export fontsetten="true"
+pkexec setfont /usr/share/bicon/font/bicon-8x16-512.psfu.gz
+fi ; fi
+
 ##A شروط التفعيل
 detect="$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)"
 if ! [ "$OJUBA_TERM" = "0" ]; then
@@ -22,12 +29,12 @@ fi
 
 #ِ#A الترحيب
 wel="*** مرحبا بكم في أعجوبة ٣٨ ** إصدارة القدس ***"
+echo
 echo -e "\033[1;31m$wel"
 echo
 
 ##A الكتابة
 if [ "$TERM" = linux ]; then
-#setfont /usr/share/bicon/font/bicon-8x16-512.psfu.gz
 source /usr/share/shell-lang/languages/ar
 fi
 
