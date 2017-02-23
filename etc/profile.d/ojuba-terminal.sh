@@ -1,5 +1,5 @@
 ##########################
-## OJUBA TERMINAL 0.3 ####
+## OJUBA TERMINAL 0.4 ####
 ##########################
 ## BY MOSAAB ALZOUBI #####
 ## UNDER WAQFv2 LICENSE ##
@@ -14,12 +14,13 @@ fi ; fi
 
 ##A شروط التفعيل
 detect="$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)"
+if [ "$KONSOLE_DBUS_WINDOW" = "" ]; then
 if ! [ "$OJUBA_TERM" = "0" ]; then
 if ! [ "$already" = "true" ]; then
 if ! [ "$detect" = "bicon.bin" ]; then
 if tty -s ; then pass=OK
 elif ! [ "`echo $detect | grep gnome`" = "" ]; then pass=OK
-fi ; fi ; fi ; fi
+fi ; fi ; fi ; fi ; fi
 
 ##A التفعيل
 if [ "$pass" = OK ]; then
