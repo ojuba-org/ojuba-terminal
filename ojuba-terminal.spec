@@ -3,7 +3,7 @@
 Name: ojuba-terminal
 Summary: Ojuba Terminal
 Summary(ar): طرفية أعجوبة
-Version: 0.3
+Version: 0.4
 Release: 1%{?dist}
 License: WAQFv2
 URL: http://ojuba.org
@@ -33,6 +33,9 @@ Ojuba Terminal
 %{_sysconfdir}/profile.d/ojuba-terminal.sh
 
 %changelog
+* Thu Feb 23 2017 Mosaab Alzoubi <moceap@hotmail.com> - 0.4-1
+- Update
+
 * Wed Feb 22 2017 Mosaab Alzoubi <moceap@hotmail.com> - 0.3-1
 - Support Font
 
